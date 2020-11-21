@@ -6,6 +6,7 @@ const {
 
 const router = Router();
 
+// localhost:3000/bundles/service1.js -> localhost:3001/bundle.js
 router.use('/service1.js', createProxyMiddleware({
   target: service1.url,
   pathRewrite: {

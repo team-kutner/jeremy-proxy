@@ -7,6 +7,12 @@ const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
 
 app.use(morgan('dev'));
+app.get('/homes/:id', (req, res) => {
+
+  res.sendFile(path.resolve('public', 'index.html'))
+})
+app.get('/hi', (req, res) => res.json('hello'))
+
 app.use(express.static(PUBLIC_DIR));
 
 // Handling asset requests for webpack bundles by passing off requests to the bundles router

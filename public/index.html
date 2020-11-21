@@ -7,13 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header id="header"></header>
+
   <div id="service1"></div>
   <div id="service2"></div>
   <div id="service3"></div>
   <div id="service4"></div>
-  <script src="bundles/service1.js"></script>
+
+
+
+  <script src="/bundles/service1.js"></script>
+  <!-- localhost:3001/bundle.js -->
+
   <script src="bundles/service2.js"></script>
   <script src="bundles/service3.js"></script>
   <script src="bundles/service4.js"></script>
+
+  <script type="application/javascript">
+    console.log('proxy client running')
+    console.log(window.ReviewsApp)
+
+
+    window.ReactDOM.render(window.React.createElement(window.ReviewsApp), document.getElementById('service1'))
+
+  </script>
 </body>
 </html>
