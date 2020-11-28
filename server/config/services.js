@@ -43,22 +43,22 @@
 module.exports = {
   service1: {
     api: ['/homes/:id/reviews', '/reviews/images/*'],
-    url: 'http://localhost:3001',
+    url: 'http://localhost:3010',
     bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3002',
-    bundle: 'app.js',
+    api: ['/homes/:id/reservation', '/homes/:id/listing'],
+    url: 'http://localhost:5000',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3003',
-    bundle: 'app.js',
+    api: '/homes/:id/nearbyHomes',
+    url: 'http://localhost:3001',
+    bundle: 'bundle.js',
   },
   service4: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3004',
-    bundle: 'app.js',
+    api: '/homes/:id/photos',
+    url: 'http://localhost:4000',
+    bundle: 'bundle.js',
   },
 };

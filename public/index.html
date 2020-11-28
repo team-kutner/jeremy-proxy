@@ -4,32 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FEC Proxy Server Template</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- react, react-dom dev bundles -->
+  <script crossorigin src="//unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  <!-- react-is -->
+  <script crossorigin src="//unpkg.com/react-is/umd/react-is.production.min.js"></script>
+
+  <!-- styled-components -->
+  <script crossorigin src="//unpkg.com/styled-components/dist/styled-components.min.js"></script>
+
 </head>
 <body>
-  <header id="header"></header>
+  <div id="Header" class="components"></div>
 
-  <div id="service1"></div>
+  <div id="photos" class="components"></div>
+  <div id="booking" class="components"></div>
+  <div id="ReviewsApp" class="components"></div>
+  <div id="NearbyApp" class="components"></div>
+
+
+
+  <!-- <div id="service1"></div>
   <div id="service2"></div>
   <div id="service3"></div>
-  <div id="service4"></div>
+  <div id="service4"></div> -->
 
 
 
   <script src="/bundles/service1.js"></script>
-  <!-- localhost:3001/bundle.js -->
-
   <script src="/bundles/service2.js"></script>
+
   <script src="/bundles/service3.js"></script>
   <script src="/bundles/service4.js"></script>
 
-  <script type="application/javascript">
-    console.log('proxy client running')
-    console.log(window.ReviewsApp)
-
-
-    window.ReactDOM.render(window.React.createElement(window.ReviewsApp), document.getElementById('service1'))
-
-  </script>
 </body>
 </html>

@@ -12,6 +12,8 @@ app.get('/homes/:id', (req, res) => {
 
   res.sendFile(path.resolve('public', 'index.html'))
 })
+
+
 app.use(express.static(PUBLIC_DIR));
 
 // Handling asset requests for webpack bundles by passing off requests to the bundles router
