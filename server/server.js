@@ -9,10 +9,12 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/homes/:id', (req, res) => {
-
   res.sendFile(path.resolve('public', 'index.html'))
 })
 
+app.get('/loaderio-da7946e2a69313aab2d42525b10122a0', (req, res) => {
+  res.status(200).send('loaderio-da7946e2a69313aab2d42525b10122a0');
+});
 
 app.use(express.static(PUBLIC_DIR));
 
