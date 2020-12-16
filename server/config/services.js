@@ -43,7 +43,7 @@
 module.exports = {
   service1: {
     api: ['/homes/:id/reviews', '/homes/reviews'],
-    url: 'http://localhost:3010',
+    url: 'http://18.188.106.160:3010',
     bundle: 'bundle.js',
   },
   service2: {
